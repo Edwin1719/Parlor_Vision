@@ -1,0 +1,32 @@
+[project]
+name = "parlor-vision"
+version = "0.3.0"
+description = "On-device, real-time multimodal AI — voice + vision conversations, fully local and private (Windows + Ollama, Spanish-optimized)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "websockets>=13.0",
+    "numpy>=1.26.0",
+    "pillow>=10.0.0",
+    "soundfile>=0.12.0",
+    "huggingface-hub>=0.25.0",
+    "httpx>=0.27.0",
+    "requests>=2.31.0",
+    
+    # TTS Backend - Kokoro ONNX (multiplataforma)
+    "kokoro-onnx>=0.5.0",
+    "onnxruntime>=1.16.0",
+    
+    # Whisper para speech-to-text (opcional, mejora precision)
+    "openai-whisper>=20231117",
+]
+
+[project.optional-dependencies]
+# TTS alternativo con voces de Microsoft (requiere internet)
+edge-tts = ["edge-tts>=6.1.0"]
+# TTS alternativo Coqui (open source, mas pesado)
+coqui = ["TTS>=0.22.0"]
+
+[tool.setuptools]
+py-modules = ["server", "tts"]

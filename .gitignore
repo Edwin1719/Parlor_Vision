@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[oc]
+*.egg-info
+.venv/
+env/
+build/
+dist/
+wheels/
+*.egg
+
+# Models (too large for git)
+*.onnx
+*.bin
+*.gguf
+*.gguf.f16
+*.gguf.kv_cache
+models/
+
+# Audio / Recordings
+*.wav
+*.mp3
+*.m4a
+*.ogg
+
+# Captures / History
+captures/
+history.json
+conversation_history.json
+notes.json
+memory.json
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+default.profraw
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment variables
+.env
+
+# OS temp
+*.tmp
+*.log
+
+# Conda
+*.conda/
+conda-env/
