@@ -4,6 +4,7 @@ Conversaciones de voz y visión con IA 100% local en tu máquina. Adaptado de ma
 
 > **Estado actual:** Prototipo funcional. Conversaciones básicas operativas con latencia moderada y soporte multi-idioma.
 
+![texto del vínculo](https://i.ytimg.com/vi/zUkKvWBJ_0I/maxresdefault.jpg)
 ---
 
 ## 🎯 Qué Logramos
